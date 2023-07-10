@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  <style>body {
+    font-size: 15pt;
+    background-color:#14162D;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+h1{
+  text-align: center;
+  color: white;
+}
+.par{
+  position: relative;
+  bottom: 15px;
+}
+.load{
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 2px solid black;
+  border-top-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 23px;
+  bottom: 10px;
+  animation: loads 2s linear infinite;
+}
+@keyframes loads{
+  0%{
+    transform: rotate(0turn);
+  }
+  100%{
+    transform: rotate(2turn);
+  }
+}
+.form{
+  position: absolute;
+  margin-top: 20%;
+  border: none;
+  height: 390px;
+  width: 300px;
+  left:10%;
+  right: 15%;
+  overflow: hidden;
+  overflow-y: hidden;
+  border-radius: 2px;
+   
+}
+.user{
+  margin-left: 10%;
+  margin-right: 50%;
+  text-align: center;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 0.2px;
+  width: 250px;
+  height: 50px;
+  box-shadow: 0 0 10px #FC0505, 0 0 40px #FC0505, 0 0 80px #FC0505;
+}
+.pass{
+  background-color: transparent;
+  text-align: center;
+  margin-left: 10%;
+  border: none;
+  width: 250px;
+  height: 50px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px #20FC05, 0 0 40px #20FC05, 0 0 80px #20FC05;
+}
+.form span:nth-child(1){
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left:0;
+  top:1px;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  background: linear-gradient(to right,transparent,#2196f3);
+  animation: con1 2s linear infinite;
+}
+.form span:nth-child(2){
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  right:1px;
+  top: 0px;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  background: linear-gradient(to bottom,transparent,#2196f3);;
+  animation: con2 2s linear infinite;
+  animation-delay: 0.9s;
+  
+}
+.form span:nth-child(3){
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left:0;
+  bottom:0px;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  background: linear-gradient(to left,transparent,#2196f3);
+  animation: con3 2s linear infinite;
+  animation-delay: 2s;
+}
+.form span:nth-child(4){
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  background: linear-gradient(to top,transparent,#0C1DE2);;
+  box-shadow: 0 0 10px #0015FF, 0 0 40px #0015FF, 0 0 80px #0015FF;
+  animation: con4 2s linear infinite;
+  animation-delay: 2.9s;
+}
+
+@keyframes con1{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{ transform: translateX(100%);
+  }
+}
+@keyframes con2{
+  0%{
+    transform: translatey(-100%);
+  }
+  100%{
+    transform: translatey(100%);
+  }
+}
+@keyframes con3{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+@keyframes con4{
+  0%{
+    transform: translatey(100%);
+  }
+  100%{
+    transform: translatey(-100%);
+  }
+}
+.btn{
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  right: 50%;
+  background-color: #1C1F3C;
+  width: 70px;
+  font-size: 16px;
+  height: 40px;
+  border:  none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  box-shadow: 10px 20px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px #38F0A4, 0 0 40px #38F0A4, 0 0 80px #38F0A4;
+  overflow: hidden;
+  color: #6D75CB;
+}
+.btn span:nth-child(1){
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent,#DBDA5B);
+  left: 0;
+  top: 1px;
+   animation: btn1 2s linear infinite;
+   
+  
+}
+.btn span:nth-child(2){
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,transparent,#D61010);
+  right: 0px;
+  bottom: 0px;
+    animation: btn2 2s linear infinite;
+}
+.btn span:nth-child(3){
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,transparent,#D61010);
+  right: 0;
+  bottom: 0px;
+    animation: btn3 2s linear infinite;
+}
+.btn span:nth-child(4){
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,transparent,#D61010);
+  left: -1px;
+  top: 0px;
+    animation: btn4 2s linear infinite;
+     
+  
+}
+@keyframes btn1{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+@keyframes btn2{
+  0%{
+    transform: translatey(-100%);
+  }
+  100%{
+    transform: translatey(100%);
+  }
+}
+@keyframes btn3{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+@keyframes btn4{
+  0%{
+    transform: translatey(100%);
+  }
+  100%{
+    transform: translatey(-100%);
+    delay: 2s;
+  }
+}
+.btn:hover{
+  background-color: #2196f3;
+  transition: 2s;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  border-radius: 50px;
+   color: black;
+}
+.btn:hover span:nth-child(1){
+  display: none;
+}
+.btn:hover span:nth-child(2){
+  display: none;
+}
+.btn:hover span:nth-child(3) {
+  display: none;
+}
+.btn:hover span:nth-child(4) {
+  display: none;
+}</style>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<form class="form">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+    <h1 class="log">Loging
+
+    </h1>
+  <div class="font1">
+    <input type="text" class="user" placeholder="Email" required>
+        <span class="a"></span>
+        <span class="b"></span>
+        <span class="c"></span>
+        <span class="d"></span>
+  </div>
+  <div class="font2">
+    <input type="text" class="pass" placeholder="Password" required>
+  </div>
+  <button class="btn">
+    <p class="par">submit</p>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+    </form>
+    </div>
+    <script>
+      btn_sv = document.querySelector('.btn');
+      btn_sv.onclick = function() {
+        this.innerHTML = "<div class='load'></div>";
+        setTimeout(() => {
+          this.innerHTML = " <p class='par'>submit</p> <span></span><span></span><span></span><span></span>";
+        }, 3000);
+      }
+    </script>
+</body>
+</html>
